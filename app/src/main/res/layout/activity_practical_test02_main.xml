@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.practicaltest02.PracticalTest02MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:text="SERVER"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <EditText
+        android:id="@+id/ServerPortEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Server PORT" />
+
+    <Button
+        android:id="@+id/StarServerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StartServer"
+        />
+
+    </LinearLayout>
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="30dp"
+    android:text="Client"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/ClientConnectAddressEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="IP Address" />
+
+        <EditText
+            android:id="@+id/ClientConnectPortEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Port" />
+
+        <EditText
+            android:id="@+id/ClientRequestOp1EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Op1" />
+
+        <EditText
+            android:id="@+id/ClientRequestOp2EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="Op2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/AddButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            />
+
+        <Button
+            android:id="@+id/MulButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mul"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/SendRequestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Request"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/resultEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:hint="" />
+
+
+</LinearLayout>
